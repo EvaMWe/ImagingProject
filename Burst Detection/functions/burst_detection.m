@@ -1,5 +1,6 @@
 function [burst_cal, shape] = burst_detection (data)
  % Determination of burst position
+ % input: array representing signal trace 
 [burst_cal,shape] = InitCalc_burst(data);
 
 if (strcmp(burst_cal.type,'burst'))
